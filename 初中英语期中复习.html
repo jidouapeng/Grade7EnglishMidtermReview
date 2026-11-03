@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>七年级英语上册 期中复习计划（Starter Unit 1 ~ Unit 3）</title>
+<style>
+:root{
+  --bg:#eef2f9;
+  --card:#fff;
+  --ink:#1e2a44;
+  --ink2:#43506e;
+  --muted:#7a86a4;
+  --line:#e6eaf3;
+  --brand:#4f7cff;
+  --brand-d:#3358d4;
+  --brand-l:#eaf0ff;
+  --accent:#ff8a4c;
+  --ok:#16b26a;
+  --ok-l:#e6f8ef;
+  --bad:#ef4d5a;
+  --bad-l:#ffecee;
+  --gold:#f5b93a;
+  --purple:#8b5cf6;
+  --radius:18px;
+  --shadow:0 6px 22px rgba(30,42,68,.07);
+  --shadow-lg:0 14px 40px rgba(30,42,68,.13);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,Segoe UI,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 600px at 12% -10%, #dfe8ff 0%, rgba(223,232,255,0) 60%),
+    radial-gradient(900px 500px at 100% 0%, #ffe9dc 0%, rgba(255,233,220,0) 55%),
+    var(--bg);
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  line-height:1.6;
+}
+.app{max-width:1100px;margin:0 auto;padding:16px 16px 80px}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  backdrop-filter:blur(10px);
+  background:rgba(255,255,255,.82);
+  border-bottom:1px solid var(--line);
+  padding:10px 0 0;
+}
+.topbar-in{max-width:1100px;margin:0 auto;padding:0 16px}
+.brand-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{
+  width:42px;height:42px;border-radius:13px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--brand),#7a5cf6);
+  color:#fff;font-weight:800;font-size:19px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 16px rgba(79,124,255,.32);
+}
+.brand-txt h1{font-size:17px;margin:0;font-weight:800;letter-spacing:.2px}
+.brand-txt p{margin:0;font-size:12.5px;color:var(--muted)}
+.head-right{margin-left:auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.pill{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--brand-l);color:var(--brand-d);
+  border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:700;
+}
+.pill.gold{background:#fff4dc;color:#a06d00}
+.pill.green{background:var(--ok-l);color:#0d7d47}
+.pill.red{background:var(--bad-l);color:#b32834}
+.pill.gray{background:#f0f2f7;color:var(--ink2)}
+.mini-bar{height:6px;background:#eceff6;border-radius:99px;overflow:hidden;margin-top:9px}
+.mini-bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),#7a5cf6);border-radius:99px;transition:width .5s}
+
+/* ---------- tabs ---------- */
+.tabs{display:flex;gap:6px;margin-top:10px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  border:0;background:transparent;cursor:pointer;
+  padding:11px 16px;font-size:14.5px;font-weight:700;color:var(--muted);
+  border-bottom:3px solid transparent;white-space:nowrap;font-family:inherit;
+}
+.tab.on{color:var(--brand-d);border-bottom-color:var(--brand)}
+.tab .badge{
+  background:#eceff6;color:var(--ink2);border-radius:99px;
+  font-size:11px;padding:1px 7px;margin-left:5px;font-weight:800;
+}
+.tab.on .badge{background:var(--brand);color:#fff}
+
+/* ---------- layout ---------- */
+.view{display:none;padding-top:18px;animation:fade .25s ease}
+.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;margin-bottom:16px}
+.card h2{font-size:16px;margin:0 0 4px;font-weight:800;display:flex;align-items:center;gap:8px}
+.card .sub{font-size:13px;color:var(--muted);margin:0 0 14px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:820px){.g2,.g3{grid-template-columns:1fr}}
+
+/* ---------- dashboard ---------- */
+.dash{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+@media(max-width:640px){.dash{grid-template-columns:1fr;text-align:center}}
+.ring{position:relative;width:132px;height:132px;flex:0 0 auto}
+.ring svg{transform:rotate(-90deg)}
+.ring .mid{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring .mid b{font-size:30px;line-height:1;font-weight:800}
+.ring .mid span{font-size:12px;color:var(--muted);margin-top:3px}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px;margin-top:14px}
+.stat{background:#f7f9fd;border:1px solid var(--line);border-radius:14px;padding:11px 13px}
+.stat b{display:block;font-size:21px;font-weight:800;line-height:1.2}
+.stat span{font-size:12px;color:var(--muted)}
+
+/* ---------- buttons ---------- */
+.btn{
+  font-family:inherit;border:0;cursor:pointer;border-radius:12px;
+  padding:10px 16px;font-size:14px;font-weight:700;color:var(--ink2);
+  background:#f1f4f9;transition:.15s;display:inline-flex;align-items:center;gap:7px;
+}
+.btn:hover{background:#e7ecf5;transform:translateY(-1px)}
+.btn:active{transform:none}
+.btn.primary{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(79,124,255,.3)}
+.btn.primary:hover{background:var(--brand-d)}
+.btn.accent{background:var(--accent);color:#fff;box-shadow:0 6px 16px rgba(255,138,76,.3)}
+.btn.ok{background:var(--ok);color:#fff;box-shadow:0 6px 16px rgba(22,178,106,.28)}
+.btn.ghost{background:#fff;border:1.5px solid var(--line)}
+.btn.big{padding:13px 22px;font-size:15.5px;border-radius:14px}
+.btn.sm{padding:6px 11px;font-size:12.5px;border-radius:9px}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+
+/* ---------- chips ---------- */
+.chip{
+  display:inline-flex;align-items:center;gap:5px;
+  border-radius:8px;padding:3px 9px;font-size:11.5px;font-weight:700;
+  background:#f1f4f9;color:var(--ink2);
+}
+.chip.u{background:var(--brand-l);color:var(--brand-d)}
+.chip.c{background:#f2ecff;color:#6d3fd1}
+.chip.r{background:#fff4dc;color:#a06d00}
+.chip.g{background:var(--ok-l);color:#0d7d47}
+
+/* ---------- day plan ---------- */
+.day{border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin-bottom:10px;background:#fcfdff}
+.day.done{background:var(--ok-l);border-color:#bfe9d4}
+.day .dtop{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.day .dname{font-weight:800;font-size:15px}
+.day .dtip{font-size:12.5px;color:var(--muted);margin:6px 0 8px;line-height:1.55}
+.day .dacts{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.unit-pills{display:flex;gap:6px;flex-wrap:wrap}
+
+/* ---------- matrix ---------- */
+.tbl-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:720px}
+th,td{padding:9px 10px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:#f7f9fd;font-weight:800;color:var(--ink2);font-size:12.5px}
+th:first-child,td:first-child{text-align:left;font-weight:700;position:sticky;left:0;background:#fff;z-index:1}
+thead th:first-child{background:#f7f9fd}
+tbody tr:hover td{background:#fbfcff}
+tbody tr:hover td:first-child{background:#fbfcff}
+td.cell{cursor:pointer;user-select:none;transition:.15s}
+td.cell:hover{background:var(--brand-l)!important;outline:1.5px dashed var(--brand);outline-offset:-2px}
+td .cnt{display:block;font-size:11px;color:var(--muted)}
+.bar-mini{height:5px;border-radius:99px;background:#eceff6;overflow:hidden;margin-top:4px;width:56px;margin-inline:auto}
+.bar-mini i{display:block;height:100%;background:var(--ok)}
+.bar-mini.full i{background:var(--gold)}
+
+/* ---------- study ---------- */
+.study-wrap{max-width:780px;margin:0 auto}
+.study-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.prog{flex:1;min-width:160px;height:9px;background:#e9edf6;border-radius:99px;overflow:hidden}
+.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),#7a5cf6);transition:width .35s}
+.qcard{
+  background:#fff;border-radius:22px;box-shadow:var(--shadow-lg);
+  padding:26px 26px 22px;margin-bottom:14px;border-top:6px solid var(--brand);
+}
+.qmeta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+.qlabel{font-size:12.5px;color:var(--muted);font-weight:700;margin-bottom:8px}
+.qtext{font-size:30px;font-weight:800;line-height:1.4;letter-spacing:.3px;word-break:break-word}
+.qtext.small{font-size:21px}
+.qtext.zh{font-size:24px;font-weight:700}
+.qhint{margin-top:10px;font-size:13.5px;color:var(--ink2);background:#f7f9fd;border-radius:10px;padding:9px 12px;border-left:3px solid var(--brand)}
+.speak{
+  border:0;background:var(--brand-l);color:var(--brand-d);border-radius:10px;
+  padding:6px 12px;font-size:13px;font-weight:700;cursor:pointer;margin-top:12px;font-family:inherit;
+}
+.speak:hover{background:#dde6ff}
+.opts{display:grid;gap:10px;margin-top:16px}
+.opt{
+  text-align:left;border:1.5px solid var(--line);background:#fbfcfe;border-radius:13px;
+  padding:13px 16px;font-size:16px;font-weight:700;color:var(--ink);cursor:pointer;
+  font-family:inherit;transition:.15s;display:flex;align-items:center;gap:10px;
+}
+.opt:hover{border-color:var(--brand);background:var(--brand-l)}
+.opt .mk{width:26px;height:26px;border-radius:8px;background:#eceff6;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--ink2);flex:0 0 auto}
+.opt.right{border-color:var(--ok);background:var(--ok-l)}
+.opt.right .mk{background:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-l)}
+.opt.wrong .mk{background:var(--bad);color:#fff}
+.opt.locked{cursor:default}
+.answer{margin-top:16px;border-radius:14px;padding:15px 17px;background:var(--ok-l);border-left:4px solid var(--ok);animation:fade .2s}
+.answer .atag{font-size:12px;font-weight:800;color:#0d7d47;margin-bottom:5px}
+.answer .atext{font-size:21px;font-weight:800;color:#0a5c37;line-height:1.5}
+.answer .anote{font-size:13.5px;color:var(--ink2);margin-top:9px;line-height:1.7;white-space:pre-wrap}
+.answer.miss{background:var(--bad-l);border-left-color:var(--bad)}
+.answer.miss .atag{color:#b32834}
+.answer.miss .atext{color:#a8232e}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+@media(max-width:560px){.actions{grid-template-columns:1fr}}
+.checkline{display:flex;align-items:center;gap:9px;margin-top:14px;font-size:14px;color:var(--ink2);font-weight:600;cursor:pointer;user-select:none}
+.checkline input{width:19px;height:19px;accent-color:var(--ok);cursor:pointer}
+.hintbar{text-align:center;font-size:12.5px;color:var(--muted);margin-top:12px}
+kbd{background:#f1f4f9;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:1px 6px;font-size:11.5px;font-family:ui-monospace,Consolas,monospace}
+
+/* ---------- library ---------- */
+.lib-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;background:#fcfdff;flex-wrap:wrap}
+.lib-item .lt{flex:1;min-width:170px}
+.lib-item .lt b{font-size:14.5px;display:block}
+.lib-item .lt span{font-size:12px;color:var(--muted)}
+.round-group{margin-bottom:16px}
+.round-group h3{font-size:14px;margin:0 0 8px;display:flex;align-items:center;gap:8px}
+.empty{text-align:center;padding:36px 16px;color:var(--muted)}
+.empty .big{font-size:44px;margin-bottom:8px}
+.done-banner{background:linear-gradient(135deg,#e6f8ef,#e9f0ff);border:1.5px solid #bfe9d4;border-radius:16px;padding:18px;text-align:center;margin-bottom:14px}
+.done-banner h3{margin:0 0 6px;font-size:17px}
+
+/* ---------- stats ---------- */
+.stat-row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:760px){.stat-row2{grid-template-columns:1fr}}
+.hbar{margin-bottom:11px}
+.hbar .hl{display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px}
+.hbar .ht{height:10px;background:#eceff6;border-radius:99px;overflow:hidden}
+.hbar .ht i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),#7a5cf6);border-radius:99px}
+.hbar .ht i.done{background:linear-gradient(90deg,var(--ok),#63dba0)}
+.kbd-list{font-size:13px;color:var(--ink2);line-height:1.9}
+
+/* ---------- modal ---------- */
+.mask{position:fixed;inset:0;background:rgba(20,28,46,.55);display:none;align-items:center;justify-content:center;z-index:100;padding:18px}
+.mask.on{display:flex}
+.modal{background:#fff;border-radius:20px;max-width:680px;width:100%;max-height:86vh;overflow:auto;box-shadow:var(--shadow-lg);padding:24px}
+.modal h3{margin:0 0 4px;font-size:18px}
+.modal .close{position:sticky;top:0;float:right;border:0;background:#f1f4f9;border-radius:9px;width:32px;height:32px;font-size:16px;cursor:pointer;color:var(--ink2)}
+.passage-en{font-size:15px;line-height:1.9;background:#f7f9fd;padding:14px;border-radius:12px;margin:10px 0}
+.passage-zh{font-size:14.5px;line-height:1.9;color:var(--ink2)}
+.pline{display:flex;gap:10px;margin-bottom:9px}
+.pline .n{flex:0 0 26px;height:26px;border-radius:8px;background:var(--brand-l);color:var(--brand-d);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.toast{
+  position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
+  background:rgba(30,42,68,.94);color:#fff;padding:11px 20px;border-radius:12px;
+  font-size:14px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:200;
+}
+.toast.on{opacity:1;transform:translateX(-50%)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand-row">
+      <div class="logo">英</div>
+      <div class="brand-txt">
+        <h1>七年级英语上册 · 期中复习计划</h1>
+        <p>人教版新教材 · Starter Unit 1 ~ Unit 3 · 单元知识清单（考点手册）</p>
+      </div>
+      <div class="head-right">
+        <span class="pill" id="hPass">第 1 轮</span>
+        <span class="pill gold" id="hStar">⭐ 0</span>
+        <span class="pill red" id="hLib">复习库 0</span>
+        <span class="pill green" id="hMastered">已掌握 0</span>
+      </div>
+    </div>
+    <div class="mini-bar"><i id="hBar" style="width:0%"></i></div>
+    <nav class="tabs">
+      <button class="tab on" data-v="plan">📅 复习计划</button>
+      <button class="tab" data-v="study">✏️ 开始复习</button>
+      <button class="tab" data-v="lib">🗂 复习库 <span class="badge" id="tabLib">0</span></button>
+      <button class="tab" data-v="stat">📊 掌握情况</button>
+    </nav>
+  </div>
+</div>
+
+<div class="app">
+  <section class="view on" id="v-plan"></section>
+  <section class="view" id="v-study"></section>
+  <section class="view" id="v-lib"></section>
+  <section class="view" id="v-stat"></section>
+</div>
+
+<div class="mask" id="mask"><div class="modal" id="modal"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   1. 教材数据（人教版七年级上册 Starter Unit 1 ~ Unit 3）
+   ============================================================ */
+const CATS = [
+  {k:'vocab',    name:'重点词汇',     icon:'🔤', type:'en2zh',  tip:'看英文，说出词性和中文意思'},
+  {k:'phrase',   name:'重点短语',     icon:'🔗', type:'en2zh',  tip:'看短语，说出汉语意思'},
+  {k:'sentence', name:'核心句型',     icon:'💬', type:'en2zh',  tip:'看句型，回忆对话的中文意思'},
+  {k:'grammar',  name:'语法聚焦',     icon:'📐', type:'cloze',  tip:'补全考点中空缺的关键信息'},
+  {k:'pitfall',  name:'易错提醒',     icon:'⚠️', type:'judge',  tip:'判断对错，再看原文提醒'},
+  {k:'contrast', name:'词语辨析',     icon:'⚖️', type:'choice', tip:'选出正确用法，再看辨析原文'},
+  {k:'form',     name:'词形变化',     icon:'🔄', type:'en2zh',  tip:'写出对应的复数或第三人称单数'},
+  {k:'recite',   name:'重点句子背诵', icon:'🎤', type:'zh2en',  tip:'看中文，背出英文句子'},
+  {k:'writing',  name:'主题作文范文', icon:'📝', type:'zh2en',  tip:'看中文，写出范文中的英文句'}
+];
+
+const UNITS = [
+{
+  id:'su1', name:'Starter Unit 1', title:'Hello!', topic:'问候与自我介绍', day:1,
+  items:[
+    {c:'vocab', q:'hello / hi', a:'int. 你好；喂'},
+    {c:'vocab', q:'good', a:'adj. 好的'},
+    {c:'vocab', q:'morning', a:'n. 早晨；上午'},
+    {c:'vocab', q:'afternoon', a:'n. 下午'},
+    {c:'vocab', q:'evening', a:'n. 晚上；傍晚'},
+    {c:'vocab', q:'name', a:'n. 名字；名称'},
+    {c:'vocab', q:'my', a:'pron. 我的'},
+    {c:'vocab', q:'your', a:'pron. 你的；你们的'},
+    {c:'vocab', q:'nice', a:'adj. 令人愉快的；好的'},
+    {c:'vocab', q:'meet', a:'v. 遇见；相逢'},
+    {c:'phrase', q:'good morning / afternoon / evening', a:'早上好／下午好／晚上好'},
+    {c:'phrase', q:'nice to meet you', a:'很高兴见到你'},
+    {c:'phrase', q:'what’s your name', a:'你叫什么名字'},
+    {c:'sentence', q:'—What’s your name?  —My name is Wang Yaming. / —I’m Emma.', a:'—— 你叫什么名字？—— 我叫王阳明。/ 我叫埃玛。'},
+    {c:'sentence', q:'—Nice to meet you.  —Nice to meet you, too.', a:'—— 很高兴见到你。—— 见到你我也很高兴。'},
+    {c:'sentence', q:'Good morning, Ms Gao!', a:'高老师，早上好！'},
+    {c:'grammar', q:'be 动词初识：I ___… / You ___… / He ___…（am / are / is）', a:'am；are；is', n:'be 动词初识：I am…/You are…/He is…，be 动词要跟着主语变化。'},
+    {c:'grammar', q:'形容词性物主代词：my name、your name，后面要接 ___。', a:'名词', n:'形容词性物主代词 my name（我的名字）、your name（你的名字），后面接名词。'},
+    {c:'pitfall', q:'判断正误：问句 “What’s your name” 末尾可以不用问号。', o:['正确','错误'], ok:1, n:'what’s 是 what is 的缩写；问句末尾要用问号。'},
+    {c:'contrast', q:'晚上天黑后见面，应该说 ___。', o:['Good morning','Good afternoon','Good evening'], ok:2, n:'按一天中的时段选用：早上起床后到中午用 morning，午饭后到傍晚用 afternoon，天黑后见面用 evening。'},
+    {c:'form', q:'name 的复数形式是？', a:'names', n:'name → names（复数）'},
+    {c:'form', q:'friend 的复数形式是？', a:'friends', n:'friend → friends（复数）'},
+    {c:'recite', q:'—— 你叫什么名字？—— 我叫李华。', a:'—What’s your name?  —My name is Li Hua.', n:'—What’s your name?  —My name is Li Hua. —— 你叫什么名字？—— 我叫李华。'},
+    {c:'recite', q:'—— 很高兴见到你。—— 见到你我也很高兴。', a:'—Nice to meet you.  —Nice to meet you, too.', n:'—— 很高兴见到你。—— 见到你我也很高兴。'},
+    {c:'recite', q:'高老师，早上好！', a:'Good morning, Ms Gao!', n:'Good morning, Ms Gao! —— 高老师，早上好！'}
+  ]
+},
+{
+  id:'su2', name:'Starter Unit 2', title:'Keep Tidy!', topic:'物品与颜色', day:1,
+  items:[
+    {c:'vocab', q:'tidy', a:'adj. 整洁的；整齐的'},
+    {c:'vocab', q:'keep', a:'v. 保持；保留'},
+    {c:'vocab', q:'pen', a:'n. 钢笔'},
+    {c:'vocab', q:'pencil', a:'n. 铅笔'},
+    {c:'vocab', q:'ruler', a:'n. 尺子'},
+    {c:'vocab', q:'eraser', a:'n. 橡皮'},
+    {c:'vocab', q:'schoolbag', a:'n. 书包'},
+    {c:'vocab', q:'book', a:'n. 书'},
+    {c:'vocab', q:'cap', a:'n. 棒球帽；便帽'},
+    {c:'vocab', q:'jacket', a:'n. 夹克衫'},
+    {c:'vocab', q:'colour', a:'n. 颜色'},
+    {c:'vocab', q:'red', a:'adj. 红色的'},
+    {c:'vocab', q:'yellow', a:'adj. 黄色的'},
+    {c:'vocab', q:'blue', a:'adj. 蓝色的'},
+    {c:'vocab', q:'green', a:'adj. 绿色的'},
+    {c:'vocab', q:'black', a:'adj. 黑色的'},
+    {c:'vocab', q:'white', a:'adj. 白色的'},
+    {c:'phrase', q:'keep tidy', a:'保持整洁'},
+    {c:'phrase', q:'what colour', a:'什么颜色'},
+    {c:'sentence', q:'—What colour is your schoolbag?  —It’s blue.', a:'—— 你的书包是什么颜色？—— 是蓝色的。'},
+    {c:'sentence', q:'—What’s this?  —It’s a ruler.', a:'—— 这是什么？—— 这是一把尺子。'},
+    {c:'sentence', q:'Let’s keep our classroom tidy.', a:'—— 让我们保持教室整洁。'},
+    {c:'grammar', q:'What colour…? 询问颜色：—What colour is it?  —It’s ___。', a:'red', n:'What colour…? 询问颜色：—What colour is it? —It’s red.'},
+    {c:'grammar', q:'冠词 a / an：a 用于辅音音素开头的词前，___ 用于元音音素开头的词前（a pen, an eraser）。', a:'an', n:'冠词 a/an：a 用于辅音音素开头的词前，an 用于元音音素开头的词前：a pen, an eraser。'},
+    {c:'pitfall', q:'判断正误：eraser 以元音音素开头，前面要用 a。', o:['正确','错误'], ok:1, n:'eraser 以元音音素开头，前面要用 an；red/yellow/blue 等颜色词可作形容词，也可作名词。'},
+    {c:'contrast', q:'___ eraser（橡皮）', o:['a','an'], ok:1, n:'看后面单词开头的音素：辅音音素用 a（a pen），元音音素用 an（an eraser）。'},
+    {c:'contrast', q:'I have ___ cap.（一顶红色的帽子）', o:['red','a red','the red'], ok:1, n:'colour 是名词“颜色”；red/yellow/blue 等既作形容词（a red cap），也可作名词（Red is my favourite colour.）。'},
+    {c:'form', q:'pen 的复数形式是？', a:'pens', n:'pen → pens（复数）'},
+    {c:'form', q:'eraser 的复数形式是？', a:'erasers', n:'eraser → erasers（复数）'},
+    {c:'form', q:'cap 的复数形式是？', a:'caps', n:'cap → caps（复数）'},
+    {c:'form', q:'jacket 的复数形式是？', a:'jackets', n:'jacket → jackets（复数）'},
+    {c:'recite', q:'—— 你的书包是什么颜色？—— 是蓝色的。', a:'—What colour is your schoolbag?  —It’s blue.', n:'—— 你的书包是什么颜色？—— 是蓝色的。'},
+    {c:'recite', q:'—— 这是什么？—— 这是一把尺子。', a:'—What’s this?  —It’s a ruler.', n:'—— 这是什么？—— 这是一把尺子。'},
+    {c:'recite', q:'—— 让我们保持教室整洁。', a:'Let’s keep our classroom tidy.', n:'Let’s keep our classroom tidy. —— 让我们保持教室整洁。'}
+  ]
+},
+{
+  id:'su3', name:'Starter Unit 3', title:'Welcome!', topic:'数字与个人信息', day:2,
+  items:[
+    {c:'vocab', q:'zero', a:'num. 零'},
+    {c:'vocab', q:'one', a:'num. 一'},
+    {c:'vocab', q:'two', a:'num. 二'},
+    {c:'vocab', q:'three', a:'num. 三'},
+    {c:'vocab', q:'four', a:'num. 四'},
+    {c:'vocab', q:'five', a:'num. 五'},
+    {c:'vocab', q:'six', a:'num. 六'},
+    {c:'vocab', q:'seven', a:'num. 七'},
+    {c:'vocab', q:'eight', a:'num. 八'},
+    {c:'vocab', q:'nine', a:'num. 九'},
+    {c:'vocab', q:'ten', a:'num. 十'},
+    {c:'vocab', q:'old', a:'adj. …… 岁的；年老的'},
+    {c:'vocab', q:'how', a:'adv. 怎样；如何'},
+    {c:'vocab', q:'telephone', a:'n. 电话'},
+    {c:'vocab', q:'number', a:'n. 号码；数字'},
+    {c:'vocab', q:'friend', a:'n. 朋友'},
+    {c:'phrase', q:'how old', a:'多大年纪'},
+    {c:'phrase', q:'telephone number', a:'电话号码'},
+    {c:'sentence', q:'—How old are you?  —I’m ten.', a:'—— 你多大了？—— 我十岁。'},
+    {c:'sentence', q:'—What’s your telephone number?  —It’s 8735 2216.', a:'—— 你的电话号码是多少？—— 是 8735 2216。'},
+    {c:'sentence', q:'This is my friend, Teng Fei.', a:'—— 这是我的朋友，腾飞。'},
+    {c:'grammar', q:'基数词 zero—ten 共有 ___ 个，可以用来表示年龄和电话号码。', a:'十（10）', n:'基数词 zero—ten 十个基数词，可用来表示年龄和电话号码。'},
+    {c:'grammar', q:'—How old ___ you?  —I’m ten.', a:'are', n:'How old…? 询问年龄：How old are you? I’m ten.'},
+    {c:'pitfall', q:'判断正误：电话号码中的 0 常常读作 zero。', o:['正确','错误'], ok:0, n:'电话号码按数字逐个读，0 常读作 zero；This is… 用于介绍身边的人。'},
+    {c:'contrast', q:'___ are you?（你多大了？）', o:['How old','How many','How much'], ok:0, n:'how old 询问年龄；how 单独使用常问方式或程度，期中重点记 how old 的用法。'},
+    {c:'contrast', q:'介绍身边的人说 “This is my friend.”，此时 this 表示 ___。', o:['这','介绍','那'], ok:1, n:'向别人介绍身边的人常说 This is my friend.，此时 this 不作“这”讲，而表示“介绍”。'},
+    {c:'form', q:'friend 的复数形式是？', a:'friends', n:'friend → friends（复数）'},
+    {c:'form', q:'number 的复数形式是？', a:'numbers', n:'number → numbers（复数）'},
+    {c:'recite', q:'—— 你多大了？—— 我十岁。', a:'—How old are you?  —I’m ten.', n:'—— 你多大了？—— 我十岁。'},
+    {c:'recite', q:'—— 你的电话号码是多少？—— 是 8735 2216。', a:'—What’s your telephone number?  —It’s 8735 2216.', n:'—— 你的电话号码是多少？—— 是 8735 2216。'},
+    {c:'recite', q:'—— 这是我的朋友，腾飞。', a:'This is my friend, Teng Fei.', n:'—— 这是我的朋友，腾飞。'}
+  ]
+},
+{
+  id:'u1', name:'Unit 1', title:'You and Me', topic:'自我介绍（姓名、国籍、班级）', day:2,
+  items:[
+    {c:'vocab', q:'full', a:'adj. 完整的；满的'},
+    {c:'vocab', q:'first', a:'adj. 第一的'},
+    {c:'vocab', q:'last', a:'adj. 最后的；末尾的'},
+    {c:'vocab', q:'class', a:'n. 班级'},
+    {c:'vocab', q:'grade', a:'n. 年级'},
+    {c:'vocab', q:'from', a:'prep. 来自；从 ……'},
+    {c:'vocab', q:'China', a:'n. 中国'},
+    {c:'vocab', q:'the UK', a:'n. 英国'},
+    {c:'vocab', q:'the USA', a:'n. 美国'},
+    {c:'vocab', q:'say', a:'v. 说（话）'},
+    {c:'vocab', q:'tell', a:'v. 告诉'},
+    {c:'vocab', q:'talk', a:'v. 交谈'},
+    {c:'vocab', q:'speak', a:'v. 讲（语言）'},
+    {c:'vocab', q:'would', a:'modal v. 将；愿意'},
+    {c:'vocab', q:'like', a:'v. 喜欢；愿意'},
+    {c:'phrase', q:'full name', a:'全名'},
+    {c:'phrase', q:'first name', a:'名字'},
+    {c:'phrase', q:'last name', a:'姓'},
+    {c:'phrase', q:'be from', a:'来自'},
+    {c:'phrase', q:'would like', a:'想要'},
+    {c:'phrase', q:'say hello to…', a:'向 …… 问好'},
+    {c:'sentence', q:'I’m from China.', a:'—— 我来自中国。'},
+    {c:'sentence', q:'My full name is Peter Brown. My first name is Peter and my last name is Brown.', a:'—— 我的全名是彼得·布朗。我的名是彼得，姓是布朗。'},
+    {c:'sentence', q:'—Would you like to be my friend?  —Sure!', a:'—— 你愿意和我做朋友吗？—— 当然！'},
+    {c:'sentence', q:'—Where are you from?  —I’m from the UK.', a:'—— 你来自哪里？—— 我来自英国。'},
+    {c:'grammar', q:'be 动词一般现在时：I ___，You / we / they ___，He / she / it ___。', a:'am；are；is', n:'I am / You, we, they are / He, she, it is。否定用 am not, is not (isn’t), are not (aren’t)。'},
+    {c:'grammar', q:'冠词：第一次提到用 a/an，如 I have ___ eraser.；再次提到用 ___：The eraser is on my desk.', a:'an；the', n:'第一次提到用 a/an：I have an eraser. 再次提到用 the：The eraser is on my desk.'},
+    {c:'grammar', q:'名词所有格（基础）：有生命名词后加 ___，如 my ___ name（我爸爸的名字）。', a:'’s；father’s', n:'有生命名词后加 ’s：my father’s name（我爸爸的名字）。'},
+    {c:'pitfall', q:'判断正误：say 强调说某种语言，speak 强调说出的内容。', o:['正确','错误'], ok:1, n:'say 强调说出的内容，speak 强调说某种语言；tell 常接“告诉某人某事”，talk 强调“交谈”。'},
+    {c:'contrast', q:'My mother often ___ English with her friends.', o:['says','speaks','tells','talks'], ok:1, n:'say 强调“说出的内容”；tell 强调“告诉”，常用 tell sb. sth.；talk 强调“交谈”，常与 with/to 连用；speak 强调“说某种语言”。'},
+    {c:'contrast', q:'在 “Peter Brown” 中，“Brown” 是 ___。', o:['first name（名）','last name（姓）'], ok:1, n:'英文名字中 first name 是“名”，last name 是“姓”，与中文“姓在前、名在后”的习惯相反。'},
+    {c:'contrast', q:'___ you from the UK?', o:['Where are','Where is','What are'], ok:0, n:'be from 表示“来自”，be 随主语变化：I’m from / She’s from…，疑问句把 be 提前：Where are you from?'},
+    {c:'form', q:'class 的复数形式是？', a:'classes', n:'class → classes（复数）'},
+    {c:'form', q:'grade 的复数形式是？', a:'grades', n:'grade → grades（复数）'},
+    {c:'form', q:'say 的第三人称单数形式是？', a:'says', n:'say → says（三单）'},
+    {c:'form', q:'tell 的第三人称单数形式是？', a:'tells', n:'tell → tells（三单）'},
+    {c:'form', q:'talk 的第三人称单数形式是？', a:'talks', n:'talk → talks（三单）'},
+    {c:'form', q:'speak 的第三人称单数形式是？', a:'speaks', n:'speak → speaks（三单）'},
+    {c:'recite', q:'—— 我来自中国。', a:'I’m from China.', n:'—— 我来自中国。'},
+    {c:'recite', q:'—— 我的全名是彼得·布朗。我的名是彼得，姓是布朗。', a:'My full name is Peter Brown. My first name is Peter and my last name is Brown.', n:'—— 我的全名是彼得·布朗。我的名是彼得，姓是布朗。'},
+    {c:'recite', q:'—— 你愿意和我做朋友吗？—— 当然！', a:'—Would you like to be my friend?  —Sure!', n:'—— 你愿意和我做朋友吗？—— 当然！'},
+    {c:'recite', q:'—— 你来自哪里？—— 我来自英国。', a:'—Where are you from?  —I’m from the UK.', n:'—— 你来自哪里？—— 我来自英国。'}
+  ]
+},
+{
+  id:'u2', name:'Unit 2', title:'We’re Family!', topic:'家庭成员', day:3,
+  items:[
+    {c:'vocab', q:'family', a:'n. 家庭；家人'},
+    {c:'vocab', q:'grandpa', a:'n. 祖父；外祖父'},
+    {c:'vocab', q:'grandma', a:'n. 祖母；外祖母'},
+    {c:'vocab', q:'grandparent', a:'n. 祖父（母）；外祖父（母）'},
+    {c:'vocab', q:'parent', a:'n. 父亲或母亲'},
+    {c:'vocab', q:'uncle', a:'n. 叔叔；舅舅'},
+    {c:'vocab', q:'aunt', a:'n. 姑母；姨母'},
+    {c:'vocab', q:'cousin', a:'n. 堂（表）兄弟姐妹'},
+    {c:'vocab', q:'son', a:'n. 儿子'},
+    {c:'vocab', q:'daughter', a:'n. 女儿'},
+    {c:'vocab', q:'photo', a:'n. 照片'},
+    {c:'vocab', q:'who', a:'pron. 谁'},
+    {c:'vocab', q:'these', a:'pron. 这些'},
+    {c:'vocab', q:'those', a:'pron. 那些'},
+    {c:'vocab', q:'chess', a:'n. 国际象棋'},
+    {c:'vocab', q:'piano', a:'n. 钢琴'},
+    {c:'vocab', q:'guitar', a:'n. 吉他'},
+    {c:'phrase', q:'family photo', a:'全家福'},
+    {c:'phrase', q:'play chess', a:'下棋'},
+    {c:'phrase', q:'play the piano', a:'弹钢琴'},
+    {c:'phrase', q:'play the guitar', a:'弹吉他'},
+    {c:'phrase', q:'play basketball', a:'打篮球'},
+    {c:'phrase', q:'how many', a:'多少'},
+    {c:'sentence', q:'This is my family photo.', a:'—— 这是我的全家福。'},
+    {c:'sentence', q:'—Who’s he?  —He’s my uncle.', a:'—— 他是谁？—— 他是我叔叔。'},
+    {c:'sentence', q:'These are my grandparents.', a:'—— 这些是我的祖父母。'},
+    {c:'sentence', q:'My brother plays ping-pong with his friends.', a:'—— 我哥哥常和朋友打乒乓球。'},
+    {c:'sentence', q:'—How many people are there in your family?  —There are five.', a:'—— 你家有几口人？—— 有五口。'},
+    {c:'grammar', q:'名词所有格 ’s：my mother’s hair（我妈妈的头发）；复数名词以 s 结尾只加 ___：the girls ___ books.', a:'’；’', n:'名词所有格 ’s 表示“某人的”：my mother’s hair（我妈妈的头发）；复数名词以 s 结尾只加 ’：the girls’ books。'},
+    {c:'grammar', q:'指示代词：this/these 指近处，that/those 指远处；___ 指单数，___ 指复数（be 动词用 are）。', a:'this / that；these / those', n:'指示代词 this/these 指近处，that/those 指远处。'},
+    {c:'grammar', q:'物主代词 my, your, his, her, its, our, their 后接 ___：her name, their school.', a:'名词', n:'物主代词 my, your, his, her, its, our, their 后接名词。'},
+    {c:'grammar', q:'play + 球类 / 乐器：球类不加 the，如 play ___；乐器加 the，如 play the ___.', a:'basketball；piano', n:'球类不加 the：play basketball；乐器加 the：play the piano。'},
+    {c:'pitfall', q:'判断正误：“my father’s name” 和 “my father name” 意思一样，都能表示“我爸爸的名字”。', o:['正确','错误'], ok:1, n:'who 是特殊疑问词，问“谁”；名词所有格 ’s 与人称代词 my/your 不要混用：my father’s name ≠ my father name。'},
+    {c:'contrast', q:'He can ___ very well.（弹钢琴）', o:['play basketball','play the piano','play piano'], ok:1, n:'乐器名词前要加 the，球类名词前不加 the。'},
+    {c:'contrast', q:'___ are my grandparents.', o:['This','These','That'], ok:1, n:'this/that 指单数，these/those 指复数；用 these/those 时 be 动词用 are。'},
+    {c:'contrast', q:'“___ people are there in your family?” 问的是“多少人”。', o:['Who','How many','Whose'], ok:1, n:'who 问“是谁”；how many 后接可数名词复数，问“多少个”。'},
+    {c:'form', q:'family 的复数形式是？', a:'families', n:'family → families（复数）'},
+    {c:'form', q:'photo 的复数形式是？', a:'photos', n:'photo → photos（复数）'},
+    {c:'form', q:'child 的复数形式是？', a:'children', n:'child → children（复数）'},
+    {c:'form', q:'play 的第三人称单数形式是？', a:'plays', n:'play → plays（三单）'},
+    {c:'form', q:'like 的第三人称单数形式是？', a:'likes', n:'like → likes（三单）'},
+    {c:'form', q:'who 的复数形式是？', a:'who（疑问词无复数变化）', n:'who —— 疑问词无复数变化'},
+    {c:'recite', q:'—— 这是我的全家福。', a:'This is my family photo.', n:'—— 这是我的全家福。'},
+    {c:'recite', q:'—— 这些是我的祖父母。', a:'These are my grandparents.', n:'—— 这些是我的祖父母。'},
+    {c:'recite', q:'—— 他是谁？—— 他是我叔叔。', a:'—Who’s he?  —He’s my uncle.', n:'—— 他是谁？—— 他是我叔叔。'},
+    {c:'recite', q:'—— 你家有几口人？—— 有五口。', a:'—How many people are there in your family?  —There are five.', n:'—— 你家有几口人？—— 有五口。'},
+    {c:'recite', q:'—— 我哥哥常和朋友打乒乓球。', a:'My brother plays ping-pong with his friends.', n:'—— 我哥哥常和朋友打乒乓球。'}
+  ]
+},
+{
+  id:'u3', name:'Unit 3', title:'My School', topic:'校园场所与方位', day:3,
+  items:[
+    {c:'vocab', q:'library', a:'n. 图书馆'},
+    {c:'vocab', q:'dining hall', a:'n. 食堂；餐厅'},
+    {c:'vocab', q:'sports field', a:'n. 运动场'},
+    {c:'vocab', q:'gym', a:'n. 体育馆'},
+    {c:'vocab', q:'classroom building', a:'n. 教学楼'},
+    {c:'vocab', q:'school hall', a:'n. 学校礼堂'},
+    {c:'vocab', q:'science building', a:'n. 科学楼'},
+    {c:'vocab', q:'teachers’ building', a:'n. 教师办公楼'},
+    {c:'vocab', q:'flag', a:'n. 旗帜'},
+    {c:'vocab', q:'raise', a:'v. 升起；举起'},
+    {c:'vocab', q:'exercise', a:'n. / v. 锻炼；练习'},
+    {c:'vocab', q:'whiteboard', a:'n. 白板'},
+    {c:'vocab', q:'smart', a:'adj. 智能的；聪明的'},
+    {c:'vocab', q:'notice', a:'n. 通知'},
+    {c:'vocab', q:'behind', a:'prep. 在 …… 后面'},
+    {c:'vocab', q:'between', a:'prep. 在 …… 之间'},
+    {c:'vocab', q:'across', a:'prep. 在 …… 对面'},
+    {c:'phrase', q:'in front of', a:'在 …… 前面'},
+    {c:'phrase', q:'next to', a:'紧邻；在 …… 旁边'},
+    {c:'phrase', q:'across from', a:'在 …… 对面'},
+    {c:'phrase', q:'between … and …', a:'在 …… 和 …… 之间'},
+    {c:'phrase', q:'raise the flag', a:'升旗'},
+    {c:'phrase', q:'do exercises', a:'做操；锻炼'},
+    {c:'phrase', q:'put up', a:'张贴'},
+    {c:'sentence', q:'—Where is the library?  —It’s next to the classroom building.', a:'—— 图书馆在哪里？—— 它在教学楼旁边。'},
+    {c:'sentence', q:'—Is there a gym in your school?  —Yes, there is.', a:'—— 你们学校有体育馆吗？—— 是的，有。'},
+    {c:'sentence', q:'There are three classroom buildings in my school.', a:'—— 我们学校有三栋教学楼。'},
+    {c:'sentence', q:'Every Monday, we raise the flag on the sports field.', a:'—— 每周一我们在运动场升旗。'},
+    {c:'grammar', q:'there be 句型：单数用 there ___，复数用 there ___：There is a library. There are many books. 疑问：Is there…? Are there…?', a:'is；are', n:'单数用 there is，复数用 there are：There is a library. There are many books. 疑问：Is there…? Are there…?'},
+    {c:'grammar', q:'方位介词：___（前面）/ behind（后面）/ ___（旁边）/ between…and…（之间）/ ___（对面）。', a:'in front of；next to；across from', n:'方位介词 in front of（前面）/ behind（后面）/ next to（旁边）/ between…and…（之间）/ across from（对面）。'},
+    {c:'pitfall', q:'判断正误：There is a gym and two dining halls. 中 be 动词用 is（就近原则）。', o:['正确','错误'], ok:0, n:'there be 句型“就近原则”：There is a gym and two dining halls.（靠近 be 的是单数，用 is）。'},
+    {c:'contrast', q:'The library is ___ the classroom building.（紧挨着）', o:['in front of','behind','next to'], ok:2, n:'in front of 在 …… 前面；behind 在 …… 后面；next to 在 …… 旁边（紧邻）。'},
+    {c:'contrast', q:'The science building is ___ the classroom building and the library.', o:['across from','between','in front of'], ok:1, n:'between A and B 在 A 和 B 之间；across from 在 …… 对面。'},
+    {c:'contrast', q:'There ___ two dining halls in our school.', o:['is','are'], ok:1, n:'单数名词用 there is，复数名词用 there are；看离 be 最近的名词（就近原则）。'},
+    {c:'form', q:'library 的复数形式是？', a:'libraries', n:'library → libraries（复数）'},
+    {c:'form', q:'gym 的复数形式是？', a:'gyms', n:'gym → gyms（复数）'},
+    {c:'form', q:'flag 的复数形式是？', a:'flags', n:'flag → flags（复数）'},
+    {c:'form', q:'exercise 的复数形式是？', a:'exercises', n:'exercise → exercises（复数）'},
+    {c:'form', q:'raise 的第三人称单数形式是？', a:'raises', n:'raise → raises（三单）'},
+    {c:'form', q:'notice 的复数形式是？', a:'notices', n:'notice → notices（复数）'},
+    {c:'recite', q:'—— 图书馆在哪里？—— 它在教学楼旁边。', a:'—Where is the library?  —It’s next to the classroom building.', n:'—— 图书馆在哪里？—— 它在教学楼旁边。'},
+    {c:'recite', q:'—— 你们学校有体育馆吗？—— 是的，有。', a:'—Is there a gym in your school?  —Yes, there is.', n:'—— 你们学校有体育馆吗？—— 是的，有。'},
+    {c:'recite', q:'—— 我们学校有三栋教学楼。', a:'There are three classroom buildings in my school.', n:'—— 我们学校有三栋教学楼。'},
+    {c:'recite', q:'—— 体育馆在食堂对面。', a:'The gym is across from the dining hall.', n:'—— 体育馆在食堂对面。'},
+    {c:'recite', q:'—— 每周一我们在运动场升旗。', a:'Every Monday, we raise the flag on the sports field.', n:'—— 每周一我们在运动场升旗。'}
+  ]
+}
+];
+
+/* ---------- 各单元主题作文范文（用于阅读与中译英挖空） ---------- */
+const PASSAGES = {
+su1:{title:'SU1 主题对话语篇写作',
+  en:['Jack: Good morning. May I have your name?','Anna: Good morning. My name is Anna.','Jack: How do you spell your name?','Anna: A-N-N-A, Anna.','Jack: Nice to meet you, Anna. My name is Jack.','Anna: Nice to meet you too.'],
+  zh:['杰克：早上好。能告诉我你的名字吗？','安娜：早上好。我叫安娜。','杰克：你的名字怎么拼写呀？','安娜：A-N-N-A，安娜。','杰克：安娜，很高兴认识你。我叫杰克。','安娜：我也很高兴认识你。']},
+su2:{title:'SU2 My bedroom',
+  en:['This is my bedroom. It’s very clean and tidy.','Look! There is a beautiful bed in my room.','There is a bookcase, a big desk and a chair, too.','The bookcase is next to the bed. There are many books in it.','The desk is in front of the window. It is white.','My schoolbag is on the desk. I read books and do homework there.','My ruler, pens, pencils and eraser are all in the schoolbag.','My cup is behind the schoolbag.','I like taking photos. There are some photos on the wall.','I love my room!'],
+  zh:['这是我的卧室，它非常干净整洁。','看！我的房间里有一张漂亮的床。','房间里还有一个书架、一张大书桌和一把椅子。','书架紧挨着床，里面放了很多书。','书桌在窗户前面，是白色的。','我的书包就放在书桌上，我平时在这儿看书、写作业。','我的尺子、钢笔、铅笔和橡皮都在书包里。','书包后面还放着我的杯子。','我喜欢拍照，墙上挂着一些我的照片。','我爱我的房间！']},
+su3:{title:'SU3 My Farm',
+  en:['I have a farm. It is beautiful!','Look, the grass is green. I have a big house. It is red.','I also have many kinds of animals and plants.','Look at the ducks. They are white. How many ducks can you see? You can see six ducks.','Look at the horses. There are eight brown horses.','What about the rabbits? There are twelve black rabbits.','I have two big apple trees and a big pear tree.','I have two cats. One is white, the other is black.','This is my beautiful farm. Do you like it?'],
+  zh:['我有一个农场，它特别漂亮！','看，草是绿色的。我有一栋大房子，是红色的。','我还养了很多种动物，种了很多植物。','你看那些鸭子，它们是白色的。你能看到多少只鸭子？能看到 6 只。','再看那些马，有 8 匹棕色的马。','兔子呢？有 12 只黑色的兔子。','我有两棵大苹果树和一棵大梨树。','我还养了两只猫，一只是白色的，另一只是黑色的。','这就是我漂亮的农场，你喜欢它吗？']},
+u1:{title:'U1 You And Me（自我介绍）',
+  en:['Hello, everyone! I am Li Hua. I am 13 years old. I’m a kind boy.','And I’m from China. Now I live in Hangzhou with my parents.','There are 6 people in my family. They are my grandparents, father, mother, brother and me.','They are good to me. I love them.','I like playing sports. I often play basketball with my classmates after school. It’s exciting. I like it very much.','White is my favourite colour. My clothes are almost white.','My favourite foods are Beijing roast duck and hot pot.','This is me. Do you want to make friends with me? Call me at 611-3764.','That’s all. Thank you.'],
+  zh:['大家好！我是李华，今年 13 岁，是个友善的男孩。','我来自中国，现在和父母一起住在杭州。','我家有 6 口人，分别是爷爷奶奶、爸爸、妈妈、弟弟和我。','他们都很照顾我，我很爱他们。','我喜欢运动，放学后经常和同学一起打篮球，这项运动很刺激，我非常喜欢。','白色是我最喜欢的颜色，我的衣服几乎都是白色的。','我最喜欢的食物是北京烤鸭和火锅。','这就是我，你们愿意和我交朋友吗？可以拨打我的电话 611-3764 联系我。','我的介绍就到这里，谢谢大家！']},
+u2:{title:'U2 My Family',
+  en:['Everyone has a family. Do you want to know about my family? Let me tell you.','There are five people in my family. They are my parents, my brother, my sister and me.','My father is tall and strong. My mother is kind and beautiful. She has long hair.','And my brother is handsome and tall.','My sister is not tall or short. But she has two big beautiful eyes.','My father is a teacher. He likes reading books.','My mother is a doctor. She likes going shopping.','My brother and my sister both like playing football. We are all students.','What a happy family! We love and help each other. I love my family.'],
+  zh:['每个人都有家庭，你想了解我的家庭吗？让我来告诉你。','我家有五口人，分别是我的父母、哥哥、姐姐和我。','爸爸又高又壮，妈妈善良又漂亮，留着一头长发。','哥哥帅气又高大。','姐姐不高不矮，但有一双漂亮的大眼睛。','爸爸是一名老师，喜欢看书。','妈妈是一名医生，喜欢购物。','哥哥和姐姐都喜欢踢足球，我们三个都是学生。','多么幸福的一家人啊！我们彼此关爱、互相帮助，我爱我的家。']},
+u3:{title:'U3 My School',
+  en:['Dear Paul,','I am very happy to tell you something about my school.','My school is big and beautiful. In my school, there are four buildings — a science building, a classroom building, a dining hall and a library.','The classroom building is next to the sports field.','The library is in the middle of the school. Lots of students love to read books in the library.','The library is my favourite place because there are all kinds of books. And I like reading very much.','Between the classroom building and the library is the science building. The dining hall is in front of it.','I enjoy studying in our school because it’s beautiful and quiet.','I think our school is the best because it looks so beautiful and everyone here is kind.','I always have a good time at school.','What about your school life? I hope to hear from you soon.','Yours, Zhang Li'],
+  zh:['亲爱的保罗：','我很高兴能跟你讲讲我的学校。','我的学校又大又漂亮。校园里有四栋建筑，分别是科学楼、教学楼、食堂和图书馆。','教学楼紧挨着运动场。','图书馆坐落在学校的中央。很多同学都喜欢去图书馆看书。','那里也是我最喜欢的地方，因为里面有各种各样的书，而我也非常喜欢阅读。','教学楼和图书馆之间是科学楼。食堂就在科学楼的前面。','我很喜欢在学校学习，因为这里既漂亮又安静。','我觉得我们的学校是最好的，不仅因为它外观美丽，还因为这里的每个人都很友善。','我在学校总是过得很开心。','你的学校生活怎么样呢？期待能早日收到你的回信。','此致敬礼　张丽']}
+};
+
+/* 作文范文的中译英挖空题 */
+const WRITING_ITEMS = {
+su1:[['杰克：早上好。能告诉我你的名字吗？','Jack: Good morning. May I have your name?'],
+     ['安娜：早上好。我叫安娜。','Anna: Good morning. My name is Anna.'],
+     ['杰克：你的名字怎么拼写呀？','Jack: How do you spell your name?'],
+     ['安娜：A-N-N-A，安娜。','Anna: A-N-N-A, Anna.'],
+     ['杰克：安娜，很高兴认识你。我叫杰克。','Jack: Nice to meet you, Anna. My name is Jack.'],
+     ['安娜：我也很高兴认识你。','Anna: Nice to meet you too.']],
+su2:[['这是我的卧室，它非常干净整洁。','This is my bedroom. It’s very clean and tidy.'],
+     ['看！我的房间里有一张漂亮的床。','Look! There is a beautiful bed in my room.'],
+     ['房间里还有一个书架、一张大书桌和一把椅子。','There is a bookcase, a big desk and a chair, too.'],
+     ['书架紧挨着床，里面放了很多书。','The bookcase is next to the bed. There are many books in it.'],
+     ['书桌在窗户前面，是白色的。','The desk is in front of the window. It is white.'],
+     ['我的书包就放在书桌上，我平时在这儿看书、写作业。','My schoolbag is on the desk. I read books and do homework there.'],
+     ['我的尺子、钢笔、铅笔和橡皮都在书包里。','My ruler, pens, pencils and eraser are all in the schoolbag.'],
+     ['书包后面还放着我的杯子。','My cup is behind the schoolbag.'],
+     ['墙上挂着一些我的照片。','There are some photos on the wall.'],
+     ['我爱我的房间！','I love my room!']],
+su3:[['我有一个农场，它特别漂亮！','I have a farm. It is beautiful!'],
+     ['看，草是绿色的。我有一栋大房子，是红色的。','Look, the grass is green. I have a big house. It is red.'],
+     ['你看那些鸭子，它们是白色的。你能看到多少只鸭子？能看到 6 只。','Look at the ducks. They are white. How many ducks can you see? You can see six ducks.'],
+     ['再看那些马，有 8 匹棕色的马。','Look at the horses. There are eight brown horses.'],
+     ['兔子呢？有 12 只黑色的兔子。','What about the rabbits? There are twelve black rabbits.'],
+     ['我有两棵大苹果树和一棵大梨树。','I have two big apple trees and a big pear tree.'],
+     ['我还养了两只猫，一只是白色的，另一只是黑色的。','I have two cats. One is white, the other is black.'],
+     ['这就是我漂亮的农场，你喜欢它吗？','This is my beautiful farm. Do you like it?']],
+u1:[['大家好！我是李华，今年 13 岁，是个友善的男孩。','Hello, everyone! I am Li Hua. I am 13 years old. I’m a kind boy.'],
+     ['我来自中国，现在和父母一起住在杭州。','And I’m from China. Now I live in Hangzhou with my parents.'],
+     ['我家有 6 口人，分别是爷爷奶奶、爸爸、妈妈、弟弟和我。','There are 6 people in my family. They are my grandparents, father, mother, brother and me.'],
+     ['他们都很照顾我，我很爱他们。','They are good to me. I love them.'],
+     ['我喜欢运动，放学后经常和同学一起打篮球。','I like playing sports. I often play basketball with my classmates after school.'],
+     ['白色是我最喜欢的颜色，我的衣服几乎都是白色的。','White is my favourite colour. My clothes are almost white.'],
+     ['我最喜欢的食物是北京烤鸭和火锅。','My favourite foods are Beijing roast duck and hot pot.'],
+     ['可以拨打我的电话 611-3764 联系我。','Call me at 611-3764.'],
+     ['我的介绍就到这里，谢谢大家！','That’s all. Thank you.']],
+u2:[['我家有五口人，分别是我的父母、哥哥、姐姐和我。','There are five people in my family. They are my parents, my brother, my sister and me.'],
+     ['爸爸又高又壮，妈妈善良又漂亮，留着一头长发。','My father is tall and strong. My mother is kind and beautiful. She has long hair.'],
+     ['哥哥帅气又高大。','And my brother is handsome and tall.'],
+     ['姐姐不高不矮，但有一双漂亮的大眼睛。','My sister is not tall or short. But she has two big beautiful eyes.'],
+     ['爸爸是一名老师，喜欢看书。','My father is a teacher. He likes reading books.'],
+     ['妈妈是一名医生，喜欢购物。','My mother is a doctor. She likes going shopping.'],
+     ['哥哥和姐姐都喜欢踢足球，我们三个都是学生。','My brother and my sister both like playing football. We are all students.'],
+     ['多么幸福的一家人啊！','What a happy family!'],
+     ['我们彼此关爱、互相帮助，我爱我的家。','We love and help each other. I love my family.']],
+u3:[['我很高兴能跟你讲讲我的学校。','I am very happy to tell you something about my school.'],
+     ['我的学校又大又漂亮。','My school is big and beautiful.'],
+     ['校园里有四栋建筑：科学楼、教学楼、食堂和图书馆。','In my school, there are four buildings — a science building, a classroom building, a dining hall and a library.'],
+     ['教学楼紧挨着运动场。','The classroom building is next to the sports field.'],
+     ['图书馆坐落在学校的中央。','The library is in the middle of the school.'],
+     ['那里也是我最喜欢的地方，因为里面有各种各样的书，而我也非常喜欢阅读。','The library is my favourite place because there are all kinds of books. And I like reading very much.'],
+     ['教学楼和图书馆之间是科学楼。食堂就在科学楼的前面。','Between the classroom building and the library is the science building. The dining hall is in front of it.'],
+     ['我很喜欢在学校学习，因为这里既漂亮又安静。','I enjoy studying in our school because it’s beautiful and quiet.'],
+     ['我觉得我们的学校是最好的，因为每个人都很友善。','I think our school is the best because it looks so beautiful and everyone here is kind.'],
+     ['期待能早日收到你的回信。','I hope to hear from you soon.']]
+};
+
+/* 计划表 */
+const PLAN_DAYS = [
+  {n:1, title:'第 1 天 · 开篇两单元', units:['su1','su2'], tip:'先拿下问候、物品与颜色。重点：good morning / afternoon / evening、a/an 的选择、What colour…? 句型。'},
+  {n:2, title:'第 2 天 · 数字与自我介绍', units:['su3','u1'], tip:'重点：be 动词三形态（am / are / is）、基数词 zero—ten、first name 与 last name 的区别。'},
+  {n:3, title:'第 3 天 · 家庭与校园', units:['u2','u3'], tip:'重点：名词所有格 ’s、there be 就近原则、方位介词 in front of / behind / next to / between…and… / across from。'},
+  {n:4, title:'第 4 天 · 强化复习', units:[], tip:'只复习复习库里的知识点，把第 1—3 天标红的内容吃透。'},
+  {n:5, title:'第 5 天 · 二次巩固', units:[], tip:'再次只练复习库，直到这一轮没有新增的待复习项。'},
+  {n:6, title:'第 6 天 · 冲刺默写', units:[], tip:'重点句子背诵 + 主题作文范文默写，然后挑战复习库最后一遍。'}
+];
+
+/* ============================================================
+   2. 状态与工具
+   ============================================================ */
+const CAT_MAP = {}; CATS.forEach(c=>CAT_MAP[c.k]=c);
+const UNIT_MAP = {}; UNITS.forEach(u=>UNIT_MAP[u.id]=u);
+const ALL = [];
+UNITS.forEach(u=>{
+  u.items.forEach((it,idx)=>{ it.id = u.id+'#'+idx; it.unit = u.id; ALL.push(it); });
+  (WRITING_ITEMS[u.id]||[]).forEach((p,idx)=>{
+    const it = {c:'writing', q:p[0], a:p[1], n:p[1], id:u.id+'#w'+idx, unit:u.id};
+    u.items.push(it); ALL.push(it);
+  });
+});
+const ITEM_MAP = {}; ALL.forEach(i=>ITEM_MAP[i.id]=i);
+
+const KEY = 'eng_midterm_review_v1';
+let state = load();
+
+function load(){
+  try{
+    const raw = localStorage.getItem(KEY);
+    if(raw){
+      const s = JSON.parse(raw);
+      return Object.assign({mastered:{},lib:[],pass:1,history:{},recited:{},minutes:0,sessions:0}, s);
+    }
+  }catch(e){}
+  return {mastered:{},lib:[],pass:1,history:{},recited:{},minutes:0,sessions:0};
+}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){} }
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+/* 判断题 / 辨析题的答案就是正确选项 */
+function answerText(it){ if(it.a) return it.a; if(it.o && it.o[it.ok]!=null) return it.o[it.ok]; return ''; }
+function noteText(it){ if(!it.n) return ''; if(it.n===it.a) return ''; return it.n; }
+function unitLabel(id){ const u=UNIT_MAP[id]; return u? u.name+' '+u.title : id; }
+function catName(k){ return CAT_MAP[k]? CAT_MAP[k].name : k; }
+function masteredCount(list){ return list.filter(i=>state.mastered[i.id]).length; }
+function totalItems(){ return ALL.length; }
+
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('on');
+  clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove('on'),1800);
+}
+function speak(text){
+  try{
+    if(!window.speechSynthesis) return toast('当前浏览器不支持朗读');
+    window.speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(text.replace(/[—–]/g,' '));
+    u.lang='en-US'; u.rate=0.85;
+    window.speechSynthesis.speak(u);
+  }catch(e){ toast('朗读失败'); }
+}
+function modal(html){
+  const m=document.getElementById('modal');
+  m.innerHTML='<button class="close" onclick="closeModal()">✕</button>'+html;
+  document.getElementById('mask').classList.add('on');
+}
+function closeModal(){ document.getElementById('mask').classList.remove('on'); }
+document.getElementById('mask').addEventListener('click',function(e){ if(e.target===this) closeModal(); });
+
+/* ============================================================
+   3. 视图：复习计划
+   ============================================================ */
+function renderPlan(){
+  const total=totalItems(), done=masteredCount(ALL), pct=Math.round(done/total*100);
+  const libN=state.lib.length;
+  const pending=total-done;
+
+  // 今日建议：第一个未完成的计划日
+  let advice=null;
+  for(const d of PLAN_DAYS){
+    if(d.units.length){
+      const items=UNITS.filter(u=>d.units.includes(u.id)).flatMap(u=>u.items);
+      if(masteredCount(items)<items.length){ advice={day:d,items:items,got:masteredCount(items)}; break; }
+    }else if(libN>0){ advice={day:d,items:[],got:0}; break; }
+  }
+
+  const R=64, C=2*Math.PI*R;
+  let html='';
+
+  html+='<div class="card"><h2>📅 复习进度总览</h2><p class="sub">人教版七年级上册 · 范围 Starter Unit 1 ~ Unit 3 · 共 '+UNITS.length+' 个单元 / '+CATS.length+' 个考点分类 / '+total+' 个知识点</p>';
+  html+='<div class="dash"><div class="ring"><svg width="132" height="132">'
+    + '<circle cx="66" cy="66" r="'+R+'" fill="none" stroke="#eceff6" stroke-width="12"/>'
+    + '<circle cx="66" cy="66" r="'+R+'" fill="none" stroke="url(#g1)" stroke-width="12" stroke-linecap="round" stroke-dasharray="'+C+'" stroke-dashoffset="'+(C*(1-pct/100))+'"/>'
+    + '<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4f7cff"/><stop offset="100%" stop-color="#7a5cf6"/></linearGradient></defs>'
+    + '</svg><div class="mid"><b>'+pct+'%</b><span>已掌握</span></div></div>';
+  html+='<div><div class="stat-row">'
+    +'<div class="stat"><b>'+done+'</b><span>已掌握知识点</span></div>'
+    +'<div class="stat"><b>'+pending+'</b><span>尚未掌握</span></div>'
+    +'<div class="stat"><b>'+libN+'</b><span>复习库待复习</span></div>'
+    +'<div class="stat"><b>'+state.pass+'</b><span>当前轮次</span></div>'
+    +'<div class="stat"><b>'+Math.floor(state.minutes)+'</b><span>累计学习(分钟)</span></div>'
+    +'<div class="stat"><b>'+Math.floor(done/10)+'</b><span>获得星星</span></div>'
+    +'</div>';
+  if(advice){
+    html+='<div style="margin-top:14px;background:#f7f9fd;border-radius:14px;padding:13px 15px">'
+      +'<div style="font-weight:800;margin-bottom:4px">🎯 建议今天：'+advice.day.title+'</div>'
+      +'<div style="font-size:13px;color:var(--ink2);margin-bottom:10px">'+advice.day.tip+'</div>'
+      +'<div style="display:flex;gap:8px;flex-wrap:wrap">'
+      + (advice.day.units.length
+          ? '<button class="btn primary" onclick="startSession({mode:\'plan\',units:['+advice.day.units.map(u=>'\''+u+'\'').join(',')+']})">开始今日计划</button>'
+          : '<button class="btn primary" onclick="startSession({mode:\'library\'})">开始复习库第 '+(state.pass+1)+' 轮</button>')
+      + '<button class="btn ghost" onclick="switchTab(\'study\')">自由选择练习</button></div></div>';
+  }
+  html+='</div></div></div>';
+
+  // 计划表
+  html+='<div class="card"><h2>🗓️ 六天复习计划</h2><p class="sub">第 1—3 天按单元推进，第 4—6 天专门攻克自己在复习库里选的知识点</p>';
+  for(const d of PLAN_DAYS){
+    let items=[];
+    if(d.units.length) items=UNITS.filter(u=>d.units.includes(u.id)).flatMap(u=>u.items);
+    const got=items.length? masteredCount(items):0;
+    const pctD=items.length? Math.round(got/items.length*100): (libN?0:100);
+    const doneD = items.length? got===items.length : (state.pass>1 && libN===0);
+    html+='<div class="day'+(doneD?' done':'')+'"><div class="dtop"><span class="chip r">DAY '+d.n+'</span>'
+      +'<span class="dname">'+d.title+'</span>'
+      +'<span class="chip '+(doneD?'g':'u')+'">'+(doneD?'已完成':(items.length? got+' / '+items.length+' 已掌握': (libN? libN+' 个待复习':'暂无任务')))+'</span>'
+      +'</div>';
+    html+='<div class="dtip">'+d.tip+'</div>';
+    if(items.length){
+      html+='<div class="unit-pills">';
+      for(const uid of d.units){ const u=UNIT_MAP[uid]; const its=u.items; html+='<span class="chip u">'+u.name+' · '+u.title+'（'+u.items.length+' 点）</span>'; }
+      html+='</div>';
+    }
+    html+='<div class="dacts">';
+    if(d.units.length){
+      html+='<button class="btn primary sm" onclick="startSession({mode:\'plan\',units:['+d.units.map(u=>'\''+u+'\'').join(',')+']})">开始这一天的内容</button>';
+      html+='<button class="btn ghost sm" onclick="startSession({mode:\'plan\',units:['+d.units.map(u=>'\''+u+'\'').join(',')+'],onlyUnmastered:true})">只练没掌握的</button>';
+    }else{
+      html+='<button class="btn primary sm" onclick="startSession({mode:\'library\'})">复习复习库（'+libN+' 个）</button>';
+    }
+    html+='</div></div>';
+  }
+  html+='</div>';
+
+  // 分类矩阵
+  html+='<div class="card"><h2>🧩 单元 × 考点分类 掌握矩阵</h2><p class="sub">点击任意格子，直接开始该分类的专项练习</p><div class="tbl-wrap"><table><thead><tr><th>单元</th>';
+  for(const c of CATS) html+='<th>'+c.icon+' '+c.name+'</th>';
+  html+='<th>合计</th></tr></thead><tbody>';
+  for(const u of UNITS){
+    html+='<tr><td>'+u.name+' '+u.title+'<div class="cnt">'+u.topic+'</div></td>';
+    let ut=0, ud=0;
+    for(const c of CATS){
+      const its=u.items.filter(i=>i.c===c.k);
+      const got=masteredCount(its);
+      ut+=its.length; ud+=got;
+      const p=its.length?Math.round(got/its.length*100):0;
+      html+='<td class="cell" onclick="startSession({mode:\'cat\',unit:\''+u.id+'\',cat:\''+c.k+'\'})">'
+        + (its.length? '<b>'+got+'</b>/'+its.length+'<span class="cnt">'+c.name+'</span><div class="bar-mini'+(p===100?' full':'')+'"><i style="width:'+p+'%"></i></div>' : '<span class="cnt" style="opacity:.35">—</span>')
+        +'</td>';
+    }
+    html+='<td><b>'+ud+'</b>/'+ut+'</td></tr>';
+  }
+  html+='<tr style="background:#f7f9fd"><td><b>合计</b></td>';
+  for(const c of CATS){
+    const its=ALL.filter(i=>i.c===c.k), got=masteredCount(its);
+    html+='<td><b>'+got+'</b>/'+its.length+'</td>';
+  }
+  html+='<td><b>'+masteredCount(ALL)+'</b>/'+total+'</td></tr>';
+  html+='</tbody></table></div>';
+  html+='<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'
+    +'<button class="btn primary" onclick="startSession({mode:\'all\'})">🚀 全量第一轮复习（'+total+' 个知识点）</button>'
+    +'<button class="btn accent" onclick="startSession({mode:\'library\'})">🗂 复习复习库（'+libN+' 个）</button>'
+    +'<button class="btn ghost" onclick="resetAll()">重置全部进度</button></div></div>';
+
+  document.getElementById('v-plan').innerHTML=html;
+}
+
+function resetAll(){
+  modal('<h3>确认重置？</h3><p class="sub">所有掌握记录、复习库和学习时长都会清空，回到第一轮全量复习。</p>'
+    +'<div style="display:flex;gap:10px;margin-top:14px"><button class="btn ghost" onclick="closeModal()">取消</button>'
+    +'<button class="btn" style="background:#ef4d5a;color:#fff" onclick="doReset()">确认重置</button></div>');
+}
+function doReset(){
+  state={mastered:{},lib:[],pass:1,history:{},recited:{},minutes:0,sessions:0};
+  save(); renderAll(); closeModal(); toast('已重置，可以重新开始第一轮');
+}
+
+/* ============================================================
+   4. 视图：复习库
+   ============================================================ */
+function renderLib(){
+  const lib=state.lib;
+  let html='';
+  if(!lib.length){
+    html+='<div class="card"><div class="done-banner"><div style="font-size:40px">🎉</div><h3>复习库是空的</h3>'
+      +'<p style="margin:0;color:var(--ink2);font-size:13.5px">全部知识点都已掌握！每遇到不会的，点「加入再次复习」，它就会自动进入这里等待下一轮。</p></div>'
+      +'<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">'
+      +'<button class="btn primary" onclick="startSession({mode:\'all\'})">重新全量复习一遍</button>'
+      +'<button class="btn ghost" onclick="switchTab(\'plan\')">回到复习计划</button></div></div>';
+  }else{
+    html+='<div class="card"><h2>🗂 我的复习库</h2><p class="sub">这些是你自己选择「加入再次复习」的知识点。每一轮都会把复习库全部过一遍（先复习到期最久的），直到全部掌握为止。</p>'
+      +'<div class="stat-row">'
+      +'<div class="stat"><b>'+lib.length+'</b><span>待复习知识点</span></div>'
+      +'<div class="stat"><b>'+state.pass+'</b><span>已完成轮次</span></div>'
+      +'<div class="stat"><b>'+lib.filter(x=>x.times>=3).length+'</b><span>顽固点(≥3次)</span></div></div>'
+      +'<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">'
+      +'<button class="btn primary big" onclick="startSession({mode:\'library\'})">开始第 '+(state.pass+1)+' 轮复习（'+lib.length+' 个）</button>'
+      +'<button class="btn ghost" onclick="startSession({mode:\'library\',allPending:true})">按加入顺序全部再练一遍</button>'
+      +'<button class="btn ghost" onclick="clearLib()">清空复习库</button></div></div>';
+
+    const rounds={};
+    lib.forEach(x=>{ const k=x.stage||2; (rounds[k]=rounds[k]||[]).push(x); });
+    Object.keys(rounds).sort((a,b)=>a-b).forEach(st=>{
+      const arr=rounds[st];
+      html+='<div class="card"><div class="round-group"><h3><span class="chip r">第 '+st+' 轮到</span> '+arr.length+' 个知识点（下一轮优先复习）</h3>';
+      arr.forEach(x=>{
+        const it=ITEM_MAP[x.id]; if(!it) return;
+        html+='<div class="lib-item"><div class="lt"><b>'+esc(it.q)+'</b><span>'+unitLabel(it.unit)+' · '+catName(it.c)+' · 已复习 '+(x.times||1)+' 次</span></div>'
+          +'<button class="btn sm ghost" onclick="showItem(\''+it.id+'\')">查看</button>'
+          +'<button class="btn sm ok" onclick="masterNow(\''+it.id+'\')">✓ 已掌握</button>'
+          +'<button class="btn sm ghost" onclick="requeue(\''+it.id+'\')">↻ 排到下轮</button></div>';
+      });
+      html+='</div></div>';
+    });
+  }
+  document.getElementById('v-lib').innerHTML=html;
+}
+function clearLib(){
+  modal('<h3>清空复习库？</h3><p class="sub">这些知识点将不再进入后续复习轮次，但已掌握记录会保留。</p>'
+    +'<div style="display:flex;gap:10px;margin-top:14px"><button class="btn ghost" onclick="closeModal()">取消</button>'
+    +'<button class="btn" style="background:#ef4d5a;color:#fff" onclick="doClearLib()">确认清空</button></div>');
+}
+function doClearLib(){ state.lib=[]; save(); renderAll(); closeModal(); toast('复习库已清空'); }
+function masterNow(id){
+  state.mastered[id]=true;
+  state.lib=state.lib.filter(x=>x.id!==id);
+  save(); renderAll(); toast('已标记为掌握 ⭐');
+}
+function requeue(id){
+  const x=state.lib.find(v=>v.id===id);
+  if(x){ x.stage=state.pass+1; x.times=(x.times||1)+1; save(); renderAll(); toast('已排到第 '+(state.pass+1)+' 轮'); }
+}
+function showItem(id){
+  const it=ITEM_MAP[id]; if(!it) return;
+  modal('<h3>'+esc(catName(it.c))+' · '+esc(unitLabel(it.unit))+'</h3>'
+    +'<div class="qtext small" style="margin:10px 0">'+esc(it.q)+'</div>'
+    +'<div class="answer"><div class="atag">答案</div><div class="atext">'+esc(answerText(it))+'</div>'
+    + (noteText(it)?'<div class="anote">'+esc(noteText(it))+'</div>':'')+'</div>');
+}
+
+/* ============================================================
+   5. 视图：掌握情况
+   ============================================================ */
+function renderStat(){
+  let html='<div class="card"><h2>📊 各分类掌握情况</h2><p class="sub">绿色代表已掌握，蓝色代表尚未完成</p>';
+  for(const c of CATS){
+    const its=ALL.filter(i=>i.c===c.k), got=masteredCount(its);
+    const p=its.length?Math.round(got/its.length*100):0;
+    html+='<div class="hbar"><div class="hl"><span>'+c.icon+' '+c.name+' <span style="color:var(--muted);font-weight:500">（'+c.tip+'）</span></span><span>'+got+' / '+its.length+' · '+p+'%</span></div>'
+      +'<div class="ht"><i class="'+(p===100?'done':'')+'" style="width:'+p+'%"></i></div></div>';
+  }
+  html+='</div>';
+
+  html+='<div class="stat-row2">';
+  html+='<div class="card"><h2>🏆 学习记录</h2><div class="stat-row">'
+    +'<div class="stat"><b>'+masteredCount(ALL)+'</b><span>已掌握</span></div>'
+    +'<div class="stat"><b>'+state.lib.length+'</b><span>复习库</span></div>'
+    +'<div class="stat"><b>'+state.pass+'</b><span>轮次</span></div>'
+    +'<div class="stat"><b>'+state.sessions+'</b><span>完成练习次数</span></div>'
+    +'<div class="stat"><b>'+Math.floor(state.minutes)+'</b><span>累计分钟</span></div>'
+    +'<div class="stat"><b>'+Math.floor(masteredCount(ALL)/10)+'</b><span>星星</span></div></div></div>';
+
+  const hard=state.lib.filter(x=>(x.times||1)>=2).sort((a,b)=>(b.times||1)-(a.times||1)).slice(0,12);
+  html+='<div class="card"><h2>⚠️ 需要重点攻克的知识点</h2>';
+  if(hard.length){
+    html+='<div class="kbd-list">';
+    hard.forEach(x=>{ const it=ITEM_MAP[x.id]; if(!it)return;
+      html+='<div style="margin-bottom:9px"><span class="chip r">复习 '+(x.times||1)+' 次</span> <b>'+esc(it.q)+'</b><br><span style="color:var(--muted);font-size:12.5px">'+esc(unitLabel(it.unit))+' · '+catName(it.c)+' → 答案：'+esc(answerText(it))+'</span></div>';
+    });
+    html+='</div><button class="btn accent" style="margin-top:8px" onclick="startSession({mode:\'library\'})">针对性再练一遍</button>';
+  }else{
+    html+='<div class="empty"><div class="big">✨</div>暂时没有反复出错的点，保持住！</div>';
+  }
+  html+='</div></div>';
+  document.getElementById('v-stat').innerHTML=html;
+}
+
+/* ============================================================
+   6. 复习会话
+   ============================================================ */
+let session=null;
+
+function startSession(opt){
+  opt=opt||{};
+  let items=[], pass=state.pass, title='', mode=opt.mode;
+
+  if(mode==='library'){
+    pass=state.pass+1;
+    /* 复习库每轮全部过一遍，先复习到期最久的（stage 小的优先），保证不会漏掉任何一个点 */
+    let q=state.lib.slice().sort(function(a,b){
+      if(opt.allPending) return (a.at||0)-(b.at||0);
+      return (a.stage||2)-(b.stage||2) || (a.at||0)-(b.at||0);
+    });
+    items=q.map(x=>ITEM_MAP[x.id]).filter(Boolean);
+    title='第 '+pass+' 轮复习（复习库 '+items.length+' 个）';
+  }else{
+    pass=state.pass;
+    if(mode==='all'){ items=ALL.slice(); title='全量复习'; }
+    else if(mode==='plan'){ items=UNITS.filter(u=>opt.units.includes(u.id)).flatMap(u=>u.items); title=opt.units.map(unitLabel).join(' + '); }
+    else if(mode==='unit'){ items=UNIT_MAP[opt.unit].items.slice(); title=unitLabel(opt.unit); }
+    else if(mode==='cat'){ items=UNIT_MAP[opt.unit].items.filter(i=>i.c===opt.cat); title=unitLabel(opt.unit)+' · '+catName(opt.cat); }
+    if(opt.onlyUnmastered) items=items.filter(i=>!state.mastered[i.id]);
+  }
+
+  if(!items.length){ toast('这里没有需要复习的内容'); return; }
+
+  // 打乱顺序（库复习时保留难度层次感，打乱即可）
+  items=items.slice();
+  if(mode!=='cat') items=shuffle(items);
+
+  session={items:items, idx:0, pass:pass, mode:mode, title:title, revealed:false, picked:null, correct:null,
+           stats:{ok:0,again:0}, startTime:Date.now(), wrongIds:[]};
+  switchTab('study');
+  renderStudy();
+}
+
+function shuffle(a){
+  for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); const t=a[i]; a[i]=a[j]; a[j]=t; }
+  return a;
+}
+
+function currentItem(){ return session? session.items[session.idx] : null; }
+
+function renderStudy(){
+  const el=document.getElementById('v-study');
+  if(!session){
+    el.innerHTML='<div class="card"><div class="empty"><div class="big">✏️</div><p>还没有开始复习。回到「复习计划」选择要练的内容，或直接开始全量第一轮。</p>'
+      +'<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">'
+      +'<button class="btn primary" onclick="startSession({mode:\'all\'})">开始全量第一轮</button>'
+      +'<button class="btn accent" onclick="startSession({mode:\'library\'})">复习复习库（'+state.lib.length+'）</button>'
+      +'<button class="btn ghost" onclick="switchTab(\'plan\')">复习计划</button></div></div></div>';
+    return;
+  }
+  const it=currentItem();
+  const total=session.items.length, no=session.idx+1;
+  const cat=CAT_MAP[it.c];
+  const isChoice=(it.o&&it.o.length);
+  const zhType=(cat.type==='zh2en');
+
+  let qlabel='';
+  if(cat.type==='en2zh') qlabel = (it.c==='vocab'?'看英文，说出词性和中文意思':(it.c==='form'?'写出对应的变化形式':'看英文，说出汉语意思'));
+  else if(cat.type==='zh2en') qlabel = '看中文，说出对应的英文';
+  else if(cat.type==='cloze') qlabel = '补全考点中的关键信息';
+  else if(cat.type==='judge') qlabel = '判断正误';
+  else if(cat.type==='choice') qlabel = '选出正确的一项';
+
+  let html='<div class="study-wrap">';
+  html+='<div class="study-top">'
+    +'<span class="chip r">'+esc(session.title)+'</span>'
+    +'<span class="chip u">第 '+session.pass+' 轮</span>'
+    +'<span class="chip g">'+no+' / '+total+'</span>'
+    +'<div class="prog"><i style="width:'+Math.round(session.idx/total*100)+'%"></i></div>'
+    +'<button class="btn sm ghost" onclick="quitSession()">退出</button></div>';
+
+  html+='<div class="qcard"><div class="qmeta">'
+    +'<span class="chip u">'+esc(unitLabel(it.unit))+'</span>'
+    +'<span class="chip c">'+cat.icon+' '+cat.name+'</span>'
+    +(it.c==='writing'? '<span class="chip g">📄 范文：'+esc((PASSAGES[it.unit]||{}).title||'')+'</span>':'')
+    +'</div>';
+  html+='<div class="qlabel">'+qlabel+'</div>';
+  html+='<div class="qtext '+(zhType?'zh':(it.q.length>40?'small':''))+'">'+esc(it.q)+'</div>';
+
+  if(cat.type==='en2zh' && /[A-Za-z]/.test(it.q)){
+    html+='<button class="speak" onclick="speak(\''+jsq(it.q)+'\')">🔊 朗读英文</button>';
+  }
+  if(it.c==='writing'){
+    html+='<button class="speak" onclick="showPassage(\''+it.unit+'\')">📄 看范文全文</button>';
+  }
+
+  if(isChoice){
+    html+='<div class="opts">';
+    it.o.forEach((o,i)=>{
+      let cls='opt';
+      if(session.revealed){
+        cls+=' locked';
+        if(i===it.ok) cls+=' right';
+        else if(i===session.picked) cls+=' wrong';
+      }
+      html+='<button class="'+cls+'" onclick="pick('+i+')"><span class="mk">'+String.fromCharCode(65+i)+'</span><span>'+esc(o)+'</span></button>';
+    });
+    html+='</div>';
+  }
+
+  if(!session.revealed && !isChoice){
+    html+='<div style="margin-top:18px"><button class="btn primary big" style="width:100%" onclick="reveal()">👀 显示答案</button></div>';
+  }
+  if(!session.revealed && isChoice){
+    html+='<div style="margin-top:14px;font-size:13px;color:var(--muted);text-align:center">先选一个答案，系统会告诉你对不对</div>';
+  }
+
+  if(session.revealed){
+    const miss=(session.correct===false);
+    html+='<div class="answer'+(miss?' miss':'')+'"><div class="atag">'+(miss?'❌ 答错了':'✅ 正确答案')+'</div>'
+      +'<div class="atext">'+esc(answerText(it))+'</div>'
+      +(noteText(it)?'<div class="anote">'+esc(noteText(it))+'</div>':'')+'</div>';
+    if(zhType && /[A-Za-z]/.test(it.a||'')){
+      html+='<button class="speak" onclick="speak(\''+jsq(it.a)+'\')">🔊 朗读英文答案</button>';
+    }
+    if(it.c==='recite'||it.c==='writing'){
+      const on=!!state.recited[it.id];
+      html+='<label class="checkline"><input type="checkbox" '+(on?'checked':'')+' onchange="markRecited(\''+it.id+'\',this.checked)"> 我已经能背诵这一句了</label>';
+    }
+    html+='<div class="actions">'
+      +'<button class="btn ok big" onclick="mark(\'ok\')">✓ 记住了</button>'
+      +'<button class="btn accent big" onclick="mark(\'again\')">↺ 加入再次复习</button></div>';
+  }
+  html+='</div>';
+
+  html+='<div class="hintbar">快捷键：<kbd>空格</kbd> 显示答案 · <kbd>1</kbd> 记住了 · <kbd>2</kbd> 加入再次复习 · <kbd>Enter</kbd> 下一题 · <kbd>A</kbd> 全量复习 · <kbd>L</kbd> 复习库 · <kbd>P</kbd> 计划 · <kbd>V</kbd> 统计</div>';
+  html+='</div>';
+  el.innerHTML=html;
+}
+function jsq(s){ return String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
+
+function reveal(){
+  if(!session||session.revealed) return;
+  session.revealed=true; renderStudy();
+}
+function pick(i){
+  if(!session||session.revealed) return;
+  const it=currentItem();
+  session.picked=i;
+  session.correct=(i===it.ok);
+  session.revealed=true;
+  if(!session.correct) session.wrongIds.push(it.id);
+  renderStudy();
+}
+function markRecited(id,on){ state.recited[id]=on; save(); }
+
+function mark(kind){
+  if(!session||!session.revealed) return;
+  const it=currentItem();
+  if(kind==='ok'){
+    state.mastered[it.id]=true;
+    state.lib=state.lib.filter(x=>x.id!==it.id);
+    session.stats.ok++;
+    recordHistory(it.id,true);
+    toast('👍 已掌握，真棒！');
+  }else{
+    state.mastered[it.id]=false;
+    delete state.mastered[it.id];
+    const stage=session.pass+1;
+    const ex=state.lib.find(x=>x.id===it.id);
+    if(ex){ ex.stage=stage; ex.times=(ex.times||1)+1; }
+    else state.lib.push({id:it.id, stage:stage, times:1, at:Date.now()});
+    session.stats.again++;
+    recordHistory(it.id,false);
+    toast('📌 已放进复习库，第 '+stage+' 轮再见');
+  }
+  save(); renderHead(); renderLib();
+  next();
+}
+function recordHistory(id,ok){
+  state.history[id]=state.history[id]||{n:0,ok:0};
+  state.history[id].n++; if(ok) state.history[id].ok++;
+}
+function next(){
+  if(!session) return;
+  session.idx++; session.revealed=false; session.picked=null; session.correct=null;
+  if(session.idx>=session.items.length) finishSession();
+  else { renderHead(); renderStudy(); }
+}
+function quitSession(){
+  const done=session.idx;
+  modal('<h3>退出本轮练习？</h3><p class="sub">已完成 '+done+' 题，进度会自动保存（已加入复习库的知识点不会丢失）。</p>'
+    +'<div style="display:flex;gap:10px;margin-top:14px"><button class="btn ghost" onclick="closeModal()">继续练习</button>'
+    +'<button class="btn primary" onclick="doQuit()">退出</button></div>');
+}
+function doQuit(){
+  const mins=(Date.now()-session.startTime)/60000;
+  state.minutes+=mins; state.sessions++;
+  session=null; save(); closeModal(); renderAll(); switchTab('plan');
+}
+function finishSession(){
+  const mins=(Date.now()-session.startTime)/60000;
+  state.minutes+=mins; state.sessions++;
+  if(session.mode==='library') state.pass=Math.max(state.pass, session.pass);
+  else if(session.pass>state.pass) state.pass=session.pass;
+  save();
+
+  const s=session.stats, libN=state.lib.length;
+  let msg='';
+  if(libN===0){
+    msg='<div class="done-banner"><div style="font-size:42px">🎉</div><h3>复习完成！复习库已清空</h3>'
+      +'<p style="margin:0;color:var(--ink2);font-size:13.5px">所有知识点你都标记为「记住了」，这一轮没有留下待复习项。</p></div>';
+  }else{
+    msg='<div style="background:#fff4dc;border-radius:14px;padding:13px 15px;margin-bottom:12px">'
+      +'<b>📌 还有 '+libN+' 个知识点在复习库里</b><div style="font-size:13px;color:var(--ink2);margin-top:4px">下一轮（第 '+(state.pass+1)+' 轮）将只针对你自己选择的这些知识点进行，直到全部掌握为止。</div></div>';
+  }
+  modal('<h3>本轮完成 ✅</h3>'
+    +'<p class="sub">'+esc(session.title)+' · 用时 '+Math.max(1,Math.round(mins))+' 分钟</p>'
+    +'<div class="stat-row">'
+    +'<div class="stat"><b>'+(s.ok+s.again)+'</b><span>本轮题数</span></div>'
+    +'<div class="stat"><b>'+s.ok+'</b><span>记住了</span></div>'
+    +'<div class="stat"><b>'+s.again+'</b><span>加入复习库</span></div>'
+    +'<div class="stat"><b>'+libN+'</b><span>复习库剩余</span></div></div>'
+    +msg
+    +'<div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">'
+    +(libN? '<button class="btn primary big" onclick="closeModal();startSession({mode:\'library\'})">开始第 '+(state.pass+1)+' 轮（'+libN+' 个）</button>'
+            +'<button class="btn ghost" onclick="closeModal();switchTab(\'lib\')">查看复习库</button>'
+          : '<button class="btn primary big" onclick="closeModal();switchTab(\'stat\')">查看掌握情况</button>')
+    +'<button class="btn ghost" onclick="closeModal();switchTab(\'plan\')">返回计划</button></div>');
+  session=null; renderAll();
+}
+
+function showPassage(uid){
+  const p=PASSAGES[uid]; if(!p) return;
+  let en='',zh='';
+  p.en.forEach((l,i)=>{ en+='<div class="pline"><span class="n">'+(i+1)+'</span><span>'+esc(l)+'</span></div>'; });
+  p.zh.forEach((l,i)=>{ zh+='<div class="pline"><span class="n">'+(i+1)+'</span><span>'+esc(l)+'</span></div>'; });
+  modal('<h3>'+esc(p.title)+'</h3><p class="sub">先读英文范文，再对照中文译文。</p>'
+    +'<div class="passage-en">'+en+'</div>'
+    +'<div style="font-weight:800;font-size:13px;color:var(--muted);margin-top:12px">中文译文</div>'
+    +'<div class="passage-zh" style="margin-top:6px">'+zh+'</div>');
+}
+
+/* ============================================================
+   7. 导航与快捷键
+   ============================================================ */
+function switchTab(name){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on', t.dataset.v===name));
+  document.querySelectorAll('.view').forEach(v=>v.classList.toggle('on', v.id==='v-'+name));
+  if(name==='study') renderStudy();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('.tab').forEach(t=>{
+  t.addEventListener('click',()=>switchTab(t.dataset.v));
+});
+
+document.addEventListener('keydown',function(e){
+  if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
+  if(e.ctrlKey||e.metaKey||e.altKey) return;
+  const studyOn=document.getElementById('v-study').classList.contains('on');
+
+  /* 全局快捷键 */
+  if(!studyOn){
+    const k=e.key.toLowerCase();
+    if(k==='a'){ e.preventDefault(); startSession({mode:'all'}); }
+    else if(k==='l'){ e.preventDefault(); startSession({mode:'library'}); }
+    else if(k==='p'){ e.preventDefault(); switchTab('plan'); }
+    else if(k==='v'){ e.preventDefault(); switchTab('stat'); }
+    return;
+  }
+
+  if(!session) return;
+  const it=currentItem(); if(!it) return;
+  if(e.code==='Space'){ e.preventDefault(); if(!session.revealed) reveal(); }
+  else if(e.key==='1'){ if(session.revealed) mark('ok'); }
+  else if(e.key==='2'){ if(session.revealed) mark('again'); }
+  else if(e.key==='Enter'){ if(session.revealed) next(); else reveal(); }
+});
+
+/* ============================================================
+   8. 顶部状态 & 初始化
+   ============================================================ */
+function renderHead(){
+  const total=totalItems(), done=masteredCount(ALL);
+  document.getElementById('hPass').textContent='第 '+state.pass+' 轮';
+  document.getElementById('hStar').textContent='⭐ '+Math.floor(done/10);
+  document.getElementById('hLib').textContent='复习库 '+state.lib.length;
+  document.getElementById('hMastered').textContent='已掌握 '+done;
+  document.getElementById('tabLib').textContent=state.lib.length;
+  document.getElementById('hBar').style.width=(total? Math.round(done/total*100):0)+'%';
+}
+function renderAll(){
+  renderHead(); renderPlan(); renderLib(); renderStat();
+  if(session) renderStudy();
+}
+renderAll();
+</script>
+</body>
+</html>
